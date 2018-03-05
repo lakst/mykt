@@ -1,0 +1,27 @@
+Starting all mycroft-core services
+Initializing...
+Starting background service bus
+Restarting: skills
+Restarting: audio
+Starting background service voice
+Starting cli
+[?1049h[1;24r(B[m[4l[?7h[?1l>
+19:52:50.366 - root - INFO - Generating grammar tables from /usr/lib/python2.7/lib2to3/Grammar.txt
+19:52:50.411 - root - INFO - Generating grammar tables from /usr/lib/python2.7/lib2to3/PatternGrammar.txt
+19:52:50.793 - mycroft.configuration.config:load_local:128 - DEBUG - Configuration /home/lakshay/mycroft-core/mycroft/configuration/mycroft.conf loaded
+19:52:50.794 - mycroft.configuration.config:load_local:128 - DEBUG - Configuration /home/lakshay/mycroft-core/mycroft/configuration/mycroft.conf loaded
+19:52:50.794 - mycroft.configuration.config:load_local:133 - DEBUG - Configuration '/etc/mycroft/mycroft.conf' not found
+19:52:50.795 - mycroft.configuration.config:load_local:133 - DEBUG - Configuration '/home/lakshay/.mycroft/mycroft.conf' not found
+19:52:50.797 - requests.packages.urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.mycroft.ai
+19:52:51.271 - mycroft.configuration.config:load_local:128 - DEBUG - Configuration /opt/mycroft/web_config_cache.json loaded
+19:52:51.272 - mycroft.configuration.config:load_local:133 - DEBUG - Configuration '/etc/mycroft/mycroft.conf' not found
+19:52:51.273 - mycroft.configuration.config:load_local:133 - DEBUG - Configuration '/home/lakshay/.mycroft/mycroft.conf' not found
+
+Traceback (most recent call last):
+  File "/home/lakshay/mycroft-core/mycroft/client/text/main.py", line 1079, in <module>
+    main()
+  File "/home/lakshay/mycroft-core/mycroft/client/text/main.py", line 1074, in main
+    curses.wrapper(gui_main)
+  File "/usr/lib/python2.7/curses/wrapper.py", line 49, in wrapper
+    curses.nocbreak()
+_curses.error: nocbreak() returned ERR
